@@ -1,0 +1,177 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/background.jpg');
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 1em 0;
+    box-sizing: border-box;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: purple;
+    padding: 0.5em;
+    border-radius: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    text-align: center;
+    padding: 2em;
+    animation: fadeInUp 1s ease-out;
+    color: #fff;
+}
+
+main h2 {
+    font-size: 2em;
+}
+
+.paragraph {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    overflow-y: auto; /* Scroll vertikal */
+    max-height: 80vh; /* Sesuaikan tinggi maksimal */
+}
+
+.product {
+    flex: 1 1 calc(50% - 1em); /* Dua kolom */
+    box-sizing: border-box;
+    margin: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product img {
+    width: 45%; /* Mengatur gambar sesuai lebar produk */
+    height: auto;
+}
+
+.product h3 {
+    margin: 0.5em 0;
+    color: black;
+    font-size: 135%;
+}
+
+.product p {
+    color: black;
+    margin: 5px;
+}
+
+.product ul li {
+  color: black;
+  margin: 5px;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+}
+
+header .logojanz {
+  height: 40px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+  width: auto;  /* Memastikan lebar gambar proporsional */
+  display: block; /* Memastikan gambar tampil sebagai block element */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
